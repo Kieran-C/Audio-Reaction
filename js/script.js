@@ -18,7 +18,13 @@ function draw(){
         ctx.fill();
         ctx.stroke();
         X += 0.01;
+        ctx.fill();
+        ctx.rect(0,0,canvas.width, canvas.height);
     }
+}
+
+function move(){
+    requestAnimationFrame(move)
 }
 
 function resizeCanvas () {
